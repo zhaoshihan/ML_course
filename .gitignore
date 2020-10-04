@@ -106,3 +106,12 @@ ENV/
 *.fdb_latexmk
 *.synctex.gz
 *.tex
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
