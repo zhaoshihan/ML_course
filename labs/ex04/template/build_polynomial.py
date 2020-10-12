@@ -12,4 +12,11 @@ def build_poly(x, degree):
     # this function should return the matrix formed
     # by applying the polynomial basis to the input data
     # ***************************************************
-    raise NotImplementedError
+    N = len(x)
+    
+    ans = np.ones((degree + 1, N))
+    for d in range(1, degree + 1):
+        arr = ans[d - 1] * x
+        ans[d] = arr
+    
+    return ans.T
