@@ -115,3 +115,6 @@ ENV/
 *.njsproj
 *.sln
 *.sw?
+
+# 临时ignore project
+projects/
