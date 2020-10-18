@@ -23,7 +23,7 @@ def compute_loss(y, tx, w, loss_type=Loss.MSE):
     
 #     import pdb; pdb.set_trace()
     if loss_type is Loss.MSE:
-        return (1 / (2 * N)) * np.sum(e * e)
+        return (1 / (2 * N)) * np.dot(e.T, e)
     elif loss_type is Loss.MAE:
         return (1 / N ) * np.sum(np.abs(e))
     else:
